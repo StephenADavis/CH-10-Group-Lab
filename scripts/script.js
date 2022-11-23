@@ -5,9 +5,8 @@
 */
 
 //Global variables
-var video = document.getElementById("example");
-var videoSource = document.getElementById("vid-src");
-var descriptionSource = document.getElementById("despsrc");
+var answer = document.querySelector("#answer p");
+var heading = document.querySelector("#answer h2");
 
 //Hamburger menu function
 function hamburger() {
@@ -20,4 +19,22 @@ function hamburger() {
       menu.style.display = "block";
       logo.style.display = "none";
     }
+  }
+
+  //Function to display the first answer
+  function ans1() {
+    heading.style.display = "block";
+    answer.textContent = "You can apply online or by printing out a form and mailing it to the school.";
+  }
+
+  //Function to display the second answer
+  function ans2() {
+    heading.style.display = "block";
+    answer.textContent = "Payment is due the day before the start of the semester.";
+  }
+
+  //Function to display the third answer
+  function ans3() {
+    heading.style.display = "block";
+    answer.textContent = "Textbooks can be picked up at the school store or shipped to your home.";
   }
